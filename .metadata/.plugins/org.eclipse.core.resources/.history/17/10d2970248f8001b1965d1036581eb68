@@ -5,7 +5,6 @@ public class Exercise {
 		Dog MyDog = new Dog();
 
 		MyDog.SetName("ぽち");
-		MyDog.SetAge(6);
 		MyDog.ShowProfile();
 	}
 }

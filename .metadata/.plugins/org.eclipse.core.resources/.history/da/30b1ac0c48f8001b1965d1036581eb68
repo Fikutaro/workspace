@@ -17,6 +17,6 @@ public class Dog {
 	    public void ShowProfile()
 	    {
 	        System.out.println( "名前は、" + Name + "です。" );
-	        System.out.println( "年齢は、" + Age + "です。" );
+	        System.out.println( "年齢はは、" + Age + "です。" );
 	    }
 }
