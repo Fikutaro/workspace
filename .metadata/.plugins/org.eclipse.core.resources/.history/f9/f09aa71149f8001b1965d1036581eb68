@@ -7,11 +7,5 @@ public class Exercise {
 		MyDog.SetName("ぽち");
 		MyDog.SetAge(6);
 		MyDog.ShowProfile();
-		
-		Dog HisDog = new Dog();
-		
-		HisDog.SetName("タマ");
-		HisDog.SetAge(5);
-		HisDog.ShowProfile();
 	}
 }
