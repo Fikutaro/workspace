@@ -1,0 +1,11 @@
+import java.io.*;
+
+public class Exercise {
+
+	public static void main(String[] args) throws IOException {
+		// TODO 自動生成されたメソッド・スタブ
+BufferedReader br = new BufferedReader(
+		new InputStreamReader(System.in));
+	}
+
+}
