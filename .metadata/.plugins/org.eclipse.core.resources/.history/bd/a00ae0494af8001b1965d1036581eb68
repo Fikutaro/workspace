@@ -5,7 +5,7 @@ public class Dog {
 	private int Age;
 	private String Type;
 
-	public  Dog(String ty) {
+	public void Dog(String ty) {
 		Type = ty;
 	}
 
