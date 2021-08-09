@@ -28,7 +28,6 @@ System.out.println( "50円は" + MyCase.GetCount( 50 ) + "枚" );
 System.out.println( "10円は" + MyCase.GetCount( 10 ) + "枚" );
 System.out.println( "5円は" + MyCase.GetCount( 5 ) + "枚" );
 System.out.println( "1円は" + MyCase.GetCount( 1 ) + "枚" );
-System.out.println( "全部で" + MyCase.GetCount() + "枚" );
 System.out.println( "総額は" + MyCase.GetAmount() + "円" );
 	}
 
