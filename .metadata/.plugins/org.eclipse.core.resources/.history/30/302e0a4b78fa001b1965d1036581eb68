@@ -28,25 +28,24 @@ public class Program01 {
 				int position = Integer.parseInt(br.readLine());
 				System.out.println("範囲は？");
 				int range = Integer.parseInt(br.readLine());
-				int distance;
+				int distance ;
 				if (target < position) {
-					distance = position - target;
+					 distance = position - target;
 				} else {
-					distance = target - position;
+					 distance = target - position;
 				}
 				if (distance == 0) {
-					System.out.println("正解です。"+ i + "回目です。");
+					System.out.println("正解です。");
 					break;
 				}
-				if (distance < range) {
+				if (distance < range ) {
 					System.out.println("ヒット");
-				} else {
+				}else {
 					System.out.println("はずれ");
 				}
-				
+				System.out.println("もう一度？ 1=yes 2=NO");
+				reply = Integer.parseInt(br.readLine());
 			}
-			System.out.println("もう一度？ 1=yes 2=NO");
-			reply = Integer.parseInt(br.readLine());
 		} while (reply != 0);
 	}
 }

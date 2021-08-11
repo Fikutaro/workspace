@@ -43,9 +43,8 @@ public class Program01 {
 				} else {
 					System.out.println("はずれ");
 				}
-				
+				System.out.println("もう一度？ 1=yes 2=NO");
 			}
-			System.out.println("もう一度？ 1=yes 2=NO");
 			reply = Integer.parseInt(br.readLine());
 		} while (reply != 0);
 	}
