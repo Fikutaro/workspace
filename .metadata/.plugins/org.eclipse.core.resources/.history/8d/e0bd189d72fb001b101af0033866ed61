@@ -58,8 +58,8 @@ public class Program02 {
 					break;
 				}
 			}
-			System.out.println("もう一度？ 1=yes 0=NO");
+			System.out.println("もう一度？ 1=yes 2=NO");
 			p = Integer.parseInt(br.readLine());
-		} while (p != 0);
+		} while (p != 2);
 	}
 }
