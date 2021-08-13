@@ -24,43 +24,32 @@ public class Program03 {
 		int reply;
 		int dealer;
 		int player;
-		int rate = 1;
 
 		do {
-			System.out.println();
 			System.out.println("最初のカードです。");
 			dealer = RandObj.nextInt(10) + 1;
 			System.out.println("|"+ dealer +"|");
-			System.out.println("いくら賭けますか？(1~"+ money +"$)");
-			bet = Integer.parseInt(br.readLine());
-			money -= bet;
-			rate = 1;
+			System.out.println("いくら賭けますか？(1~100$)");
 
-			do { 
+			do {
 				player = RandObj.nextInt(10) + 1;
 				System.out.println("|"+ player +"|");
 				if(player >= dealer) {
 					System.out.println("あなたの勝ち。");
-					System.out.println( bet + "$の勝ちです。");
-					rate *= 2; 
-					System.out.println("倍率は"	+ rate + "倍。続けますか？（1=Yes; 0=No!）");
+					System.out.println("所持金は" + money + "$です。");
+					System.out.println("続けますか？（1=Yes; 0=No!）");
 					reply = Integer.parseInt(br.readLine());
-					if (reply == 0) {
-						money += bet;
-					}
-					bet *= 2;
 				}else {
 					System.out.println("あなたの負け。");
 					System.out.println("所持金は" + money + "$です。");
 					reply = 0;
 				}
 			} while (reply != 0);
-			System.out.println("所持金は" + money + "$です。");
 		} while (money < 1000 && money > 0);
 		if (money <= 0) {
 			System.out.print("所持金が0になりました\n");
 		} else {
-			System.out.print("すごい 1000$を超えました\n");
+			System.out.print("すごい\n");
 		}
 	}
 }

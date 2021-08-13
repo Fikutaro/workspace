@@ -34,7 +34,6 @@ public class Program03 {
 			System.out.println("いくら賭けますか？(1~"+ money +"$)");
 			bet = Integer.parseInt(br.readLine());
 			money -= bet;
-			rate = 1;
 
 			do { 
 				player = RandObj.nextInt(10) + 1;

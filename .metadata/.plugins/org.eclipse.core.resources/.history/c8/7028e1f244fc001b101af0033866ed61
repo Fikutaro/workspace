@@ -27,14 +27,12 @@ public class Program03 {
 		int rate = 1;
 
 		do {
-			System.out.println();
 			System.out.println("最初のカードです。");
 			dealer = RandObj.nextInt(10) + 1;
 			System.out.println("|"+ dealer +"|");
 			System.out.println("いくら賭けますか？(1~"+ money +"$)");
 			bet = Integer.parseInt(br.readLine());
 			money -= bet;
-			rate = 1;
 
 			do { 
 				player = RandObj.nextInt(10) + 1;
