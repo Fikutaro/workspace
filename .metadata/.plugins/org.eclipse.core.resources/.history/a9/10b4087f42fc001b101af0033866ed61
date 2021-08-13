@@ -36,16 +36,14 @@ public class Program03 {
 				System.out.println("|"+ player +"|");
 				if(player >= dealer) {
 					System.out.println("あなたの勝ち。");
-					System.out.println("所持金は" + money + "$です。");
 					System.out.println("続けますか？（1=Yes; 0=No!）");
 					reply = Integer.parseInt(br.readLine());
 				}else {
 					System.out.println("あなたの負け。");
-					System.out.println("所持金は" + money + "$です。");
 					reply = 0;
 				}
 			} while (reply != 0);
-		} while (money < 1000 && money > 0);
+		} while (money <= 0 || money >= 1000);
 		if (money <= 0) {
 			System.out.print("所持金が0になりました\n");
 		} else {

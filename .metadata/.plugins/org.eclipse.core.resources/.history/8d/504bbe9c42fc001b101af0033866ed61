@@ -45,7 +45,7 @@ public class Program03 {
 					reply = 0;
 				}
 			} while (reply != 0);
-		} while (money < 1000 && money > 0);
+		} while (money <= 0 && money >= 1000);
 		if (money <= 0) {
 			System.out.print("所持金が0になりました\n");
 		} else {
