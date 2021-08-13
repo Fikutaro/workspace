@@ -31,15 +31,8 @@ public class Program03 {
 			System.out.println("最初のカードです。");
 			dealer = RandObj.nextInt(10) + 1;
 			System.out.println("|"+ dealer +"|");
-			while (true) {
-				System.out.println("いくら賭けますか？(1~"+ money +"$)");
-				bet = Integer.parseInt(br.readLine());
-				if (bet <= money) {
-					break;
-				}else {
-					System.out.println("所持金以上は賭けられません。");
-				}
-			}
+			System.out.println("いくら賭けますか？(1~"+ money +"$)");
+			bet = Integer.parseInt(br.readLine());
 			money -= bet;
 			rate = 1;
 
@@ -58,6 +51,7 @@ public class Program03 {
 					bet *= 2;
 				}else {
 					System.out.println("あなたの負け。");
+					System.out.println("所持金は" + money + "$です。");
 					reply = 0;
 				}
 			} while (reply != 0);

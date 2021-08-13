@@ -58,6 +58,7 @@ public class Program03 {
 					bet *= 2;
 				}else {
 					System.out.println("あなたの負け。");
+					System.out.println("所持金は" + money + "$です。");
 					reply = 0;
 				}
 			} while (reply != 0);
