@@ -13,7 +13,6 @@ public class program05 {
 		
 		int reply;
 		
-		
 		System.out.print("4桁の数を当ててください。\n");
 		System.out.print("同じ数字は１度しか使用されません。最上位に0が使用される場合もあります。\n");
 		System.out.print("ヒントとして、合っている数字の数と、桁（位置）も合っている数字の数を示します。\n");
@@ -34,7 +33,9 @@ public class program05 {
 				    numbers[1] != numbers[2] &&
 				    numbers[1] != numbers[3] &&
 				    numbers[2] != numbers[3] ));
-			
+			for (int i = 0 ; i < 4 ; i++){
+			      System.out.print(numbers[i]);
+			    }
 
 			System.out.print("もう一度やりますか？（Yes:1 No:0）");
 			reply = Integer.parseInt(br.readLine());
