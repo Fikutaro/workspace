@@ -16,7 +16,6 @@ public class Program04 {
 		System.out.print("ブレーキは毎回、１段階だけ強くしたり弱くしたりできます。\n");
 		System.out.print("----------------------------------------------\n");
 
-		
 		int speed;
 		int distance;
 		int brake;
