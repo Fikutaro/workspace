@@ -48,7 +48,7 @@ public class Program04 {
 			}
 			
 			speed = speed - brake;
-			distance -= ((speed * 10)+ 35)/36;
+			distance = ((speed * 10)+ 35)/36;
 
 			
 			}while(distance > 0);
