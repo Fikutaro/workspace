@@ -23,7 +23,6 @@ public class Program04 {
 		int reply;
 		int count = 0;
 		
-		
 		do {
 			count ++;
 			speed = 100;
