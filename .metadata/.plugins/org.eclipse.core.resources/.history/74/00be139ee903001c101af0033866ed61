@@ -14,15 +14,15 @@ public class Arraypractice {
 		String type = null;
 		int sum = 0;
 		
-		for (int idx = 0; idx < param.length; idx++) {
-			if (param[idx].equals("+") || param[idx].equals("-") ) {
+		for (int idx = 0; idx <param.length; idx++) {
+			if (param[idx] == "+" || param[idx] == "-" ) {
 				type = param[idx];
 			}else {
 				int num = Integer.parseInt(param[idx]);
 				if(type != null){
 					if(type.equals("+")) {
 						sum += num; 
-					}else{
+					}else {
 						sum -= num; 
 					}
 				}else {
