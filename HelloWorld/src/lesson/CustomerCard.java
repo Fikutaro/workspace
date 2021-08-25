@@ -2,9 +2,10 @@ package lesson;
 
 public class CustomerCard {
 
-	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
 
-	}
+	int id;
+	String name;
+	String address;
+	double shoeSize;
 
 }
