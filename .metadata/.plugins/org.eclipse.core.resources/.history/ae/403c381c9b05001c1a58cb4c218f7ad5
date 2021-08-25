@@ -33,4 +33,3 @@ public class Arraypractice {
 		System.out.println(sum);
 	}
 }
-
