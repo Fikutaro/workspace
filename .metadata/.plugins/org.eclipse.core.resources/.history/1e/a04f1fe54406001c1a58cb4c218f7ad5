@@ -1,0 +1,30 @@
+package lesson;
+
+class Point {
+	int x;
+	int y;
+	
+	void printPosition() {
+		System.out.println("座標値は(" + this.x 
+				+ "," + this.y + ")です");
+	}
+}
+
+public class MethodCallExample {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		Point p1 = new Point();
+		p1.x = 10;
+		p1.y = 5;
+		
+		Point p2 = new Point();
+		p2.x = 5;
+		p2.y = 2;
+		
+		p1.printPosition();
+		p2.printPosition();
+	}
+
+}

@@ -1,6 +1,9 @@
 package lesson;
 
-
+class Point {
+	int x;
+	int y;
+}
 
 public class PointInstanceExample {
 
