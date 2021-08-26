@@ -28,8 +28,8 @@ public class MethodCallExample {
 		p1.y = 3;
 
 		Point p2 = new Point();
-		p2.x = 4;
-		p2.y = 6;
+		p1.x = 4;
+		p1.y = 6;
 
 		if(p1.isSamePosition(p2) == true){
 			System.out.println("p1とp2は同じ座標です");
