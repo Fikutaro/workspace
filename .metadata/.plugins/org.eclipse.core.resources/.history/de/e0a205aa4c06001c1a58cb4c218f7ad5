@@ -4,20 +4,16 @@ class Point {
 	int x;
 	int y;
 
-
-	Point(){
-		this.x = 0;
-		this.y = 0;
-	}
-	
-	Point(Point p){
-		this.x = p.x;
-		this.y = p.y;
-		
-	}
-	Point(int x, int y){
+	void set(int x, int y) {
 		this.x = x;
 		this.y = y;
+
+	}
+	
+	void set(Point p) {
+		this.x = p.x;
+		this.y = p.y;
+
 	}
 }
 
@@ -29,14 +25,12 @@ public class MethodCallExample {
 		Point p1 = new Point ();
 		System.out.println("(" + p1.x + "," + p1.y + ")");
 		
+		p1.set(10,0);
+		System.out.println("(" + p1.x + "," + p1.y + ")");
 		
+		Point p2 = new Point();
 		
-		Point p2 = new Point(10,20);
+		p2.set(p1);
 		System.out.println("(" + p2.x + "," + p2.y + ")");
-		
-		Point p3 = new Point(p2);
-		
-		
-		System.out.println("(" + p3.x + "," + p3.y + ")");
 	}
 }
