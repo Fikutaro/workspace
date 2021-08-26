@@ -4,17 +4,16 @@ class Point {
 	int x;
 	int y;
 
-	void multipy(int n) {
-		this.x *= n;
-		this.y *= n;
+	void set(int x, int y) {
+		this.x = x;
+		this.y = y;
+
 	}
 	
-	boolean isSamePosition(Point p) {
-		if(this.x == p.x && this.y == p.y) {
-			return true;
-		}else {
-			return false;
-		}
+	void set(Point p) {
+		this.x = p.x;
+		this.y = p.y;
+
 	}
 }
 
@@ -23,26 +22,15 @@ public class MethodCallExample {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		Point p1 = new Point();
-		p1.x = 2;
-		p1.y = 3;
-
+		Point p1 = new Point ();
+		System.out.println("(" + p1.x + "," + p1.y + ")");
+		
+		p1.set(10,0);
+		System.out.println("(" + p1.x + "," + p1.y + ")");
+		
 		Point p2 = new Point();
-		p2.x = 4;
-		p2.y = 6;
-
-		if(p1.isSamePosition(p2) == true){
-			System.out.println("p1とp2は同じ座標です");
-		}else {
-			System.out.println("p1とp2は異なる座標です");
-		}
 		
-		p1.multipy(2);
-		
-		if(p1.isSamePosition(p2) == true){
-			System.out.println("p1とp2は同じ座標です");
-		}else {
-			System.out.println("p1とp2は異なる座標です");
-		}
+		p2.set(p1);
+		System.out.println("(" + p2.x + "," + p2.y + ")");
 	}
 }
