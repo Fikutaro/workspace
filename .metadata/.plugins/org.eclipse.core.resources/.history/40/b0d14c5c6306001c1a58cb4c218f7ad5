@@ -1,0 +1,6 @@
+package lesson;
+
+public class ColorPoint  extends Point{
+
+	String color;
+}

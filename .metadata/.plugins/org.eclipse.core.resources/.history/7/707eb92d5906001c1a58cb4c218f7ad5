@@ -1,0 +1,24 @@
+package lesson;
+
+
+
+
+public class MethodCallExample {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		Point p1 = new Point ();
+		System.out.println("(" + p1.x + "," + p1.y + ")");
+		
+		
+		
+		Point p2 = new Point(10,20);
+		System.out.println("(" + p2.x + "," + p2.y + ")");
+		
+		Point p3 = new Point(p2);
+		
+		
+		System.out.println("(" + p3.x + "," + p3.y + ")");
+	}
+}

@@ -2,18 +2,21 @@ package lesson;
 
 public class CustomerCard {
 
-
+	static int nextId = 1001;
 	int id;
 	String name;
 	String address;
-	double shoeSize;
 	
-	CustomerCard(int id, String name, String address,
-			double shoeSize){
-		this.id = id;
+	CustomerCard(String name, String address){
+		this.id = CustomerCard.nextId;
+		CustomerCard.nextId++;
 		this.name = name;
 		this.address = address;
-		this.shoeSize = shoeSize;
+	}
+	
+	
+	public CustomerCard(String name){
+		this(name, "");
 	}
 	
 	
@@ -22,7 +25,6 @@ public class CustomerCard {
 		System.out.println("ID:" + this.id);
 		System.out.println("氏名:" + this.name);
 		System.out.println("住所:" + this.address);
-		System.out.println("靴のサイズ:" + this.shoeSize);
 	}
 
 }

@@ -1,0 +1,19 @@
+package lesson;
+
+public class StaticVariableExample {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		Point points[] = new Point[5];
+		System.out.println("Point.counter=" + Point.counter );
+		points[0] = new Point(0,0);
+		System.out.println("Point.counter=" + Point.counter );
+		points[1] = new Point(5,0);
+		System.out.println("Point.counter=" + Point.counter );
+		points[2] = new Point(10,5);
+		System.out.println("Point.counter=" + Point.counter );
+		
+	}
+
+}
