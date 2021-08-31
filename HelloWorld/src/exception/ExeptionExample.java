@@ -5,11 +5,17 @@ public class ExeptionExample {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		int[] scores = new int[3];
-		scores[0] = 65;
-		scores[1] = 65;
-		scores[2] = 65;
-		scores[3] = 65;
+		int a = 4;
+		int b = 0;
+		try {
+			int c = a/b;
+			System.out.println("Cの値は" + c);
+		}
+		catch (ArithmeticException e){
+			System.out.println("例外をキャッチしました");
+			System.out.println(e);
+		}
+		System.out.println("プログラムを終了します");
 	}
 
 }
