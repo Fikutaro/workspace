@@ -23,7 +23,7 @@ public class ArrayListExample {
 		pointList.add(new Point(2,3));
 		pointList.add(new Point(3,4));
 		
-		for (int i = 0 ; i < pointList.size(); i++) {
+		for (int i = 0 ; i <= pointList.size(); i++) {
 			Point p = pointList.get(i);
 			System.out.println("(" + p.x + "," + p.y +")");
 		}
